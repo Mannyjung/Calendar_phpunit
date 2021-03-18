@@ -6,7 +6,7 @@ class Celendar extends TestCase{
     
     public function setUp():void{
         $this->calendar =new Date();
-        $req = $this->calendar('POST');
+       
     }
     public function testDate1(){
         $this->assertEquals('Wednesday',$this->calendar->one(02,03));
@@ -17,6 +17,7 @@ class Celendar extends TestCase{
     public function testDate3(){
         $this->assertEquals('Tuesday',$this->calendar->one(04,20));
     }
+
 }
 
 ?>
